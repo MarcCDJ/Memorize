@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		861551F92AC1D807000F14B8 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861551F82AC1D807000F14B8 /* EmojiMemoryGame.swift */; };
 		86A7D5EF2A95520D0071D6FD /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7D5EE2A95520D0071D6FD /* MemorizeApp.swift */; };
-		86A7D5F12A95520D0071D6FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7D5F02A95520D0071D6FD /* ContentView.swift */; };
+		86A7D5F12A95520D0071D6FD /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A7D5F02A95520D0071D6FD /* EmojiMemoryGameView.swift */; };
 		86A7D5F32A95520E0071D6FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A7D5F22A95520E0071D6FD /* Assets.xcassets */; };
 		86A7D5F62A95520E0071D6FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A7D5F52A95520E0071D6FD /* Preview Assets.xcassets */; };
+		86C830262ABA127200F9FB53 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C830252ABA127200F9FB53 /* MemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		861551F82AC1D807000F14B8 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		86A7D5EB2A95520D0071D6FD /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A7D5EE2A95520D0071D6FD /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
-		86A7D5F02A95520D0071D6FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		86A7D5F02A95520D0071D6FD /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		86A7D5F22A95520E0071D6FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A7D5F52A95520E0071D6FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86C830252ABA127200F9FB53 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				86A7D5EE2A95520D0071D6FD /* MemorizeApp.swift */,
-				86A7D5F02A95520D0071D6FD /* ContentView.swift */,
+				86A7D5F02A95520D0071D6FD /* EmojiMemoryGameView.swift */,
+				86C830252ABA127200F9FB53 /* MemoryGame.swift */,
+				861551F82AC1D807000F14B8 /* EmojiMemoryGame.swift */,
 				86A7D5F22A95520E0071D6FD /* Assets.xcassets */,
 				86A7D5F42A95520E0071D6FD /* Preview Content */,
 			);
@@ -95,7 +101,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					86A7D5EA2A95520D0071D6FD = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A7D5F12A95520D0071D6FD /* ContentView.swift in Sources */,
+				86A7D5F12A95520D0071D6FD /* EmojiMemoryGameView.swift in Sources */,
 				86A7D5EF2A95520D0071D6FD /* MemorizeApp.swift in Sources */,
+				86C830262ABA127200F9FB53 /* MemoryGame.swift in Sources */,
+				861551F92AC1D807000F14B8 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +189,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -241,6 +250,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
